@@ -1,6 +1,6 @@
-let current_number = '0';
-let stack_number = '';
-let action = '';
+let current_number = '0'
+let stack_number = ''
+let action = ''
 let num_buttons = document.getElementsByClassName("button_num")
 let action_buttons = document.getElementsByClassName("button_action")
 
