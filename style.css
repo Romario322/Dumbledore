@@ -1,7 +1,3 @@
-body{
-    background: linear-gradient(30deg, rgb(216, 36, 12), 20%, rgb(63, 9, 77), 80%, rgb(5, 184, 145));
-    background-attachment: fixed;
-}
 .center{
     text-align: center;
 }
