@@ -1,0 +1,34 @@
+body{
+    background: white;
+}
+
+h1{
+    font-family: monospace;
+    font-size: 3vw;
+}
+
+h2{
+    font-family: monospace;
+    font-size: 2.5vw;
+}
+
+p{
+    font-family: monospace;
+    font-size: 2vw;
+}
+
+img{
+    width: 9vw;
+    height: 9vw;
+    padding: 0.5vw;
+}
+
+.center{
+    text-align: center;
+}
+
+.column_3{
+    column-count: 3;
+    column-gap: 1%;
+    column-rule: solid;
+}
