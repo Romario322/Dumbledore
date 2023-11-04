@@ -21,9 +21,11 @@ let color_background = getCookie("color_background");
 let color_text = getCookie("color_text");
 let color_ui = getCookie("color_ui");
 
-color_change_background.value = color_background;
-color_change_text.value = color_text;
-color_change_ui.value = color_ui;
+if (color_change_background != null && color_change_tex != null && color_change_ui != null){
+    color_change_background.value = color_background;
+    color_change_text.value = color_text;
+    color_change_ui.value = color_ui;
+}
 
 body.style.background = color_background;
 for (let i = 0; i < text.length; i++){
