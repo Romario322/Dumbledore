@@ -1,40 +1,18 @@
-body{
-    background: white;
-}
-
 h1{
     font-family: monospace;
-    font-size: 3vw;
 }
 
 h2{
     font-family: monospace;
-    font-size: 2.5vw;
 }
 
 p{
     font-family: monospace;
-    font-size: 2vw;
-}
-
-img{
-    width: 9vw;
-    height: 9vw;
-    padding: 0.5vw;
 }
 
 button{
-    border-radius: 0.5vw;
-    height: 3vw;
-    width: 10vw;
-    font-size: 1.5vw;
     font-family: monospace;
     padding: 0px;
-}
-
-input[type="color"]{
-    height: 3vw;
-    width: 6vw;
 }
 
 .center{
@@ -47,47 +25,141 @@ input[type="color"]{
     column-rule: solid;
 }
 
-.main_button{
-    width: 14vw;
-    height: 7vw;
-    margin-bottom: 0.5vw;
-}
-
-.calc_button{
-    width: 5vw;
-    height: 5vw;
-    margin: 0.2vw;
-}
-
 #result ,#prom{
     font-family: monospace;
-    font-size: 2vw;
     text-align: right;
-    margin-right: 1vw;
 }
 
-#prom{
-    font-size: 1vw;
-    margin-top: 0.2vw;
-}
 #action , #mem{
     font-family: monospace;
-    font-size: 1vw;
-    margin-left: 1vw;
-    margin-top: 0.2vw;
     text-align: left;
     float: left;
 }
 
 .calc_field{
-    border: solid;
-    border-color:white;
-    border-radius: 1vw;
-    border-width: 0.2vw;
     background-color: black;
     margin-left: auto;
     margin-right: auto;
-    height: 4vw;
-    width: 33vw;
-    margin-bottom: 0.5vw;
+}
+
+@media screen and (min-width: 425px) {
+    h1{
+        font-size: 3vw;
+    }
+    
+    h2{
+        font-size: 2.5vw;
+    }
+    
+    p{
+        font-size: 2vw;
+    }
+    
+    button{
+        border-radius: 0.5vw;
+        height: 3vw;
+        width: 10vw;
+        font-size: 1.5vw;
+        padding: 0px;
+    }
+    
+    input[type="color"]{
+        height: 3vw;
+        width: 6vw;
+    }
+    
+    .main_button{
+        width: 14vw;
+        height: 7vw;
+        margin-bottom: 0.5vw;
+    }
+    
+    .calc_button{
+        width: 5vw;
+        height: 5vw;
+        margin: 0.2vw;
+    }
+    
+    #result ,#prom{
+        font-size: 2vw;
+        margin-right: 1vw;
+    }
+    
+    #prom{
+        font-size: 1vw;
+        margin-top: 0.2vw;
+    }
+    #action , #mem{
+        font-size: 1vw;
+        margin-left: 1vw;
+        margin-top: 0.2vw;
+    }
+    
+    .calc_field{
+        border-radius: 1vw;
+        height: 4vw;
+        width: 33vw;
+        margin-bottom: 0.5vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    h1{
+        font-size: 4.5vw;
+    }
+    
+    h2{
+        font-size: 3.75vw;
+    }
+    
+    p{
+        font-size: 3vw;
+    }
+    
+    button{
+        border-radius: 0.33vw;
+        height: 4.5vw;
+        width: 15vw;
+        font-size: 2.25vw;
+        padding: 0px;
+    }
+    
+    input[type="color"]{
+        height: 4.5vw;
+        width: 4.5vw;
+    }
+    
+    .main_button{
+        width: 21vw;
+        height: 10.5vw;
+        margin-bottom: 0.33vw;
+    }
+    
+    .calc_button{
+        width: 7.5vw;
+        height: 7.5vw;
+        margin: 0.13vw;
+    }
+    
+    #result ,#prom{
+        font-size: 3vw;
+        margin-right: 1vw;
+    }
+    
+    #prom{
+        font-size: 1.5vw;
+        margin-top: 0.13vw;
+    }
+    #action , #mem{
+        font-size: 1.5vw;
+        margin-left: 1vw;
+        margin-top: 0.13vw;
+    }
+    
+    .calc_field{
+        border-radius: 1.5vw;
+        height: 6vw;
+        width: 49.5vw;
+        margin-bottom: 0.33vw;
+    }
 }

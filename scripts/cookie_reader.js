@@ -46,5 +46,10 @@ for (let i = 0; i < special_text.length; i++){
 }
 for (let i = 0; i < ui.length; i++){
     ui[i].style.background = color_ui;
-    ui[i].style.border = "solid " + "0.2vw " + border_color_ui;
+    if(window.innerWidth <= 425){
+        ui[i].style.border = "solid 0.05vw" + border_color_ui;
+    }
+    else{
+        ui[i].style.border = "solid 0.1vw" + border_color_ui;
+    }
 }
