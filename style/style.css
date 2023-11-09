@@ -23,6 +23,20 @@ img{
     padding: 0.5vw;
 }
 
+button{
+    border-radius: 0.5vw;
+    height: 3vw;
+    width: 10vw;
+    font-size: 1.5vw;
+    font-family: monospace;
+    padding: 0px;
+}
+
+input[type="color"]{
+    height: 3vw;
+    width: 6vw;
+}
+
 .center{
     text-align: center;
 }
@@ -31,4 +45,49 @@ img{
     column-count: 3;
     column-gap: 1%;
     column-rule: solid;
+}
+
+.main_button{
+    width: 14vw;
+    height: 7vw;
+    margin-bottom: 0.5vw;
+}
+
+.calc_button{
+    width: 5vw;
+    height: 5vw;
+    margin: 0.2vw;
+}
+
+#result ,#prom{
+    font-family: monospace;
+    font-size: 2vw;
+    text-align: right;
+    margin-right: 1vw;
+}
+
+#prom{
+    font-size: 1vw;
+    margin-top: 0.2vw;
+}
+#action , #mem{
+    font-family: monospace;
+    font-size: 1vw;
+    margin-left: 1vw;
+    margin-top: 0.2vw;
+    text-align: left;
+    float: left;
+}
+
+.calc_field{
+    border: solid;
+    border-color:white;
+    border-radius: 1vw;
+    border-width: 0.2vw;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 4vw;
+    width: 33vw;
+    margin-bottom: 0.5vw;
 }

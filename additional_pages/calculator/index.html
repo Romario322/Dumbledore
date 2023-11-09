@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="../../style/style.css">
+    </head>
+    <body id="body">
+        <div>
+            <div>
+                <a href="../../index.html"><button>Home</button></a>
+                <a href="../ui_editor/index.html"><button>UI Editor</button></a>
+                <h1 class="center">Calculator</h1>
+            </div>
+            <div class="center, calc_field">
+                <div id="action"></div>
+                <div id="prom"></div>
+                <div id="mem">m 0</div>
+                <div id="result">0</div>
+            </div>
+            <div class="center">
+                <button class="calc_button" id="button_clear">C</button>
+                <button class="calc_button" id="button_del">←</button>
+                <button class="calc_button" id="mem_clear">mc</button>
+                <button class="calc_button button_action">+</button>
+                <button class="calc_button button_once">cos</button>
+                <button class="calc_button button_once">acos</button>
+            </div>
+            <div class="center">
+                <button class="calc_button button_num">1</button>
+                <button class="calc_button button_num">2</button>
+                <button class="calc_button button_num">3</button>
+                <button class="calc_button button_action">-</button>
+                <button class="calc_button button_once">sin</button>
+                <button class="calc_button button_once">asin</button>
+            </div>
+            <div class="center">
+                <button class="calc_button button_num">4</button>
+                <button class="calc_button button_num">5</button>
+                <button class="calc_button button_num">6</button>
+                <button class="calc_button button_action">×</button>
+                <button class="calc_button button_once">tg</button>
+                <button class="calc_button button_once">atg</button>
+            </div>
+            <div class="center">
+                <button class="calc_button button_num">7</button>
+                <button class="calc_button button_num">8</button>
+                <button class="calc_button button_num">9</button>
+                <button class="calc_button button_action">÷</button>
+                <button class="calc_button button_once">ctg</button>
+                <button class="calc_button button_once">actg</button>
+            </div>
+            <div class="center">
+                <button class="calc_button" id="mem_plus">m+</button>
+                <button class="calc_button" id="button_zero">0</button>
+                <button class="calc_button" id="button_point">.</button>
+                <button class="calc_button" id="equals">=</button>
+                <button class="calc_button button_action">log</button>
+                <button class="calc_button" id="button_e">e</button>
+            </div>
+            <div class="center">
+                <button class="calc_button" id="mem_minus">m-</button>
+                <button class="calc_button" id="button_+/-">+/-</button>
+                <button class="calc_button" id="mem_read">mr</button>
+                <button class="calc_button button_action">√</button>
+                <button class="calc_button button_action">^</button>
+                <button class="calc_button" id="button_pi">π</button>
+            </div>
+        </div>
+        <script src="../../scripts/cookie_reader.js"></script>
+        <script src="calculate.js"></script>
+    </body>
+</html>
