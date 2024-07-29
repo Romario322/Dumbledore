@@ -22,7 +22,7 @@ try{
     Theme_link.removeAttribute('href');
     Theme_link.setAttribute("href", selected_theme);
     console.log(selected_theme);
-    if (selected_theme == "../Styles/dark_theme.css"){
+    if (selected_theme == "Styles/dark_theme.css"){
         theme_changer.textContent = "Dark";
     }
 }

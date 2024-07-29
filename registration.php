@@ -6,7 +6,7 @@
     <title>Registration</title>
     <link rel="stylesheet" href="../Styles/font-awesome.min.css">
     <link rel="stylesheet" href="../Styles/style.css">
-    <link id="Theme_link" rel="stylesheet" href="../Styles/light_theme.css">
+    <link id="Theme_link" rel="stylesheet" href="Styles/light_theme.css">
 </head>
 <body>
     <div class="main">
@@ -31,7 +31,7 @@
     <div class="site_style">
         <input id="Theme_changer" type="submit" value="Light">
     </div>
-    <script src="../js_scripts/on_load.js"></script>
-    <script src="../js_scripts/theme_change.js"></script>
+    <script src="js_scripts/on_load.js"></script>
+    <script src="js_scripts/theme_change.js"></script>
 </body>
 </html>

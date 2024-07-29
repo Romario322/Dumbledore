@@ -23,7 +23,7 @@
             <input type="password" name="Login" placeholder="Password">
         </div>
         <input type="submit" value="Log in">
-        <div class="reg"><a href="Additional Pages/registration.php">Sign up</a></div>    
+        <div class="reg"><a href="registration.php">Sign up</a></div>    
         </div> 
       
     </div>
