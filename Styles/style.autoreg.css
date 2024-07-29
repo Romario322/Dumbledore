@@ -56,4 +56,25 @@ text-align: center;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+a:hover{
+    color:red;
+}
 
