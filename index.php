@@ -8,23 +8,21 @@
     <link rel="stylesheet" href="Syles/style.autoreg.css">
 </head>
 <body>
-    <div class="reg">
-        
+    <div class="reg"> 
         <div class="container">
         <div class="forms_inner">
          <div class="item">
         <form action='' method="post">
-        <div class="h1"><h2>Authorization</h2>
+        <div class="h1"><h2>Authorization</h2></div>
+        <div class="input-icon">
+            <i class="fa fa-user"></i>
+            <input type="email" name="Email" placeholder="Email">
         </div>
-                 <input type="email"  name='Email'>
-                 <input type="password"  name='Login'>
-                 <input type="submit" value="Log in">
-             </form>
+        <div class="input-icon">
+            <i class="fa fa-lock"></i>
+            <input type="password" name="Login" placeholder="Password">
         </div>
-        
-        <div class="icon1"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
-        <div class="icon2"><i class="fa fa-lock" aria-hidden="true"></i></div>
-        </div>
+        <input type="submit" value="Log in">
         </div>     
     </div>
 </body>
