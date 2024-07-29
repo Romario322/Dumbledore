@@ -1,0 +1,16 @@
+h1{
+    color: rgb(209, 209, 209);
+}
+
+input{
+    background-color:  rgb(53, 53, 53);
+    color: rgb(209, 209, 209);
+}
+
+input::placeholder{
+    color: rgb(170, 170, 170);
+}
+
+body{
+    background-color:  rgb(85, 85, 85);
+}
