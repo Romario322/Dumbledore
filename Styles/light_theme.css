@@ -7,10 +7,14 @@ input{
     color: rgb(0, 0, 0);
 }
 
+.main{
+    background-color:  rgb(150, 150, 150);
+}
+
 input::placeholder{
     color: rgb(73, 73, 73);
 }
 
 body{
-    background-color:  rgb(163, 163, 163);
+    background-color:  rgb(184, 184, 184);
 }

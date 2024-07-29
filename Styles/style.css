@@ -19,11 +19,11 @@ input{
 
 .main{
     position: absolute;
+    padding: 10px;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%)
 }
-
 
 .site_style input{
     font-size: 25px;

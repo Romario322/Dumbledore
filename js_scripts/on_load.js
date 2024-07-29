@@ -13,5 +13,17 @@ let getCookie = function(cookie_name){
     return "NaN";
 }
 
-let theme_btn = document.getElementById("Theme");
+let Theme_link = document.getElementById("Theme_link");
+let theme_changer = document.getElementById("Theme_changer");
+
 let selected_theme = getCookie("Theme");
+
+try{
+    Theme_link.removeAttribute('href');
+    Theme_link.setAttribute("href", selected_theme);
+    console.log(selected_theme);
+    if (selected_theme == "../Styles/dark_theme.css"){
+        theme_changer.textContent = "Dark";
+    }
+}
+catch{}
