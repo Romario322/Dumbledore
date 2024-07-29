@@ -1,20 +1,48 @@
-i, h1{
+i, h2{
     color: rgb(0, 0, 0);
 }
 
 input{
-    background-color:  rgb(212, 212, 212);
+    background-color:  rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-}
-
-.main{
-    background-color:  rgb(150, 150, 150);
+    border: 1px solid rgb(204, 202, 202);
 }
 
 input::placeholder{
     color: rgb(73, 73, 73);
 }
 
+input:focus{
+    background-color:  rgb(230, 230, 230);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(116, 116, 116);
+}
+
+input:hover{
+    background-color:  rgb(228, 228, 228);
+    color: rgb(15, 15, 15);
+    border: 1px solid rgb(196, 196, 196);
+}
+
+input:active{
+    background-color:  rgb(146, 146, 146);
+    color: rgb(39, 39, 39);
+    border: 1px solid rgb(167, 167, 167);
+}
+
+.main{
+    background-color:  rgb(204, 202, 202);
+}
+
 body{
-    background-color:  rgb(184, 184, 184);
+    background-color:  rgb(161, 161, 161);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 119, 255);
+}
+
+a:hover{
+    color: rgb(255, 0, 13);
 }

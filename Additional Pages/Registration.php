@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="main">
-        <h1>Sign up</h1>
+        <h2>Registration</h2>
         <div class="field">
             <input class="input_with_icon" id="Email" type="email" placeholder="Email">
             <i class="fa fa-envelope icon_in" aria-hidden="true"></i>
@@ -24,10 +24,8 @@
             <i class="fa fa-lock icon_in_small" aria-hidden="true"></i>
         </div>
         <div class="field">
-            <input id="Register" type="submit" value="Register">
-        </div>
-        <div class="field">
-            <a href="../index.html"><input id="Authorization" type="submit" value="Log in"></a>
+            <input class="submit_input" id="Register" type="submit" value="Sign up">
+            <a href="../index.php"><p id="Authorization">Log in</p></a>
         </div>
     </div>
     <div class="site_style">
