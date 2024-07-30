@@ -18,12 +18,10 @@ let theme_changer = document.getElementById("Theme_changer");
 
 let selected_theme = getCookie("Theme");
 
-try{
+if (selected_theme != "NaN") {
     Theme_link.removeAttribute('href');
     Theme_link.setAttribute("href", selected_theme);
-    console.log(selected_theme);
     if (selected_theme == "Styles/dark_theme.css"){
         theme_changer.textContent = "Dark";
     }
 }
-catch{}

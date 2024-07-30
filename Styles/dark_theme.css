@@ -5,6 +5,24 @@ i, h2{
 input{
     background-color:  rgb(41, 41, 41);
     color: rgb(209, 209, 209);
+    border: 1px solid rgb(82, 82, 82);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: rgb(209, 209, 209) !important;
+}
+
+input:-webkit-autofill {
+    background-color: transparent !important;
+}
+
+.submit_input{
+    background-color:  rgb(55, 160, 60);
+    color: rgb(209, 209, 209);
     border: 1px solid rgb(68, 68, 68);
 }
 
@@ -18,14 +36,32 @@ input:focus{
     border: 1px solid rgb(167, 167, 167);
 }
 
+.submit_input:focus{
+    background-color:  rgb(55, 158, 61);
+    color: rgb(230, 228, 228);
+    border: 1px solid rgb(77, 77, 77);
+}
+
 input:hover{
     background-color:  rgb(48, 48, 48);
     color: rgb(212, 212, 212);
     border: 1px solid rgb(71, 71, 71);
 }
 
+.submit_input:hover{
+    background-color:  rgb(54, 172, 60);
+    color: rgb(230, 228, 228);
+    border: 1px solid rgb(77, 77, 77);
+}
+
 input:active{
     background-color:  rgb(61, 61, 61);
+    color: rgb(182, 182, 182);
+    border: 1px solid rgb(82, 82, 82);
+}
+
+.submit_input:active{
+    background-color:  rgb(27, 27, 27);
     color: rgb(182, 182, 182);
     border: 1px solid rgb(82, 82, 82);
 }

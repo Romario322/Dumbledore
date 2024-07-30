@@ -5,7 +5,21 @@ i, h2{
 input{
     background-color:  rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    border: 1px solid rgb(204, 202, 202);
+    border: 1px solid rgb(189, 188, 188);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: rgb(0, 0, 0) !important;
+}
+
+.submit_input{
+    background-color:  rgb(55, 160, 60);
+    color: rgb(209, 209, 209);
+    border: 1px solid rgb(189, 188, 188);
 }
 
 input::placeholder{
@@ -18,14 +32,32 @@ input:focus{
     border: 1px solid rgb(116, 116, 116);
 }
 
+.submit_input:focus{
+    background-color:  rgb(55, 158, 61);
+    color: rgb(230, 228, 228);
+    border: 1px solid rgb(77, 77, 77);
+}
+
 input:hover{
     background-color:  rgb(228, 228, 228);
     color: rgb(15, 15, 15);
     border: 1px solid rgb(196, 196, 196);
 }
 
+.submit_input:hover{
+    background-color:  rgb(54, 172, 60);
+    color: rgb(230, 228, 228);
+    border: 1px solid rgb(77, 77, 77);
+}
+
 input:active{
     background-color:  rgb(146, 146, 146);
+    color: rgb(39, 39, 39);
+    border: 1px solid rgb(167, 167, 167);
+}
+
+.submit_input:active{
+    background-color:  rgb(255, 255, 255);
     color: rgb(39, 39, 39);
     border: 1px solid rgb(167, 167, 167);
 }

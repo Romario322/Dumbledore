@@ -4,6 +4,7 @@ try{
 }
 catch{}
 theme_changer.onclick = function(){
+    location.reload();
     let theme = Theme_link.getAttribute("href");
     if (theme == "Styles/light_theme.css") {
         theme_changer.textContent = "Dark";
@@ -17,5 +18,4 @@ theme_changer.onclick = function(){
         Theme_link.removeAttribute('href');
         Theme_link.setAttribute("href", "Styles/light_theme.css");
     }
-    console.log(theme);
 }
