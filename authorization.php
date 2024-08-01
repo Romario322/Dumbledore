@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once("login.php");
 try{
     $pdo = new PDO($att, $user, $pass, $opts);
@@ -6,24 +7,30 @@ try{
 catch(PDOException $ex){
     throw new PDOException($ex->getMessage(), (int)$ex->getCode());
 }
-if ($_POST["Username_Email"] != "" && $_POST["Password"] != ""){
-    $username_email = $_POST["Username_Email"];
-    $password = $_POST["Password"];
-    $query_user = "SELECT * FROM Users WHERE Username = :username AND Password = :password";
-    $query_email = "SELECT * FROM Users WHERE Email = :email AND Password = :password";
-    $stmt_user = $pdo->prepare($query_user);
-    $stmt_user->execute([":username"=>$username_email, ":password"=>$password]);
-    $stmt_email = $pdo->prepare($query_email);
-    $stmt_email->execute([":email"=>$username_email, ":password"=>$password]);
-    if ($stmt_email->rowCount() > 0 || $stmt_user->rowCount() > 0){
-        header("location: site.php");
-        exit();
-    }
-    else{
-        echo "Ты не русский";
-    }
+$username_email = $_POST["Username_Email"];
+$password = $_POST["Password"];
+if (empty($username_email) && empty($password)){
+    $_SESSION["error"] = "Все поля должны быть заполнены.";
+    header("location: index.php");
+    exit();
+}
+$query = "SELECT * FROM Users WHERE Username = :username OR Email = :email";
+$stmt = $pdo->prepare($query);
+$stmt->execute([":username"=>$username_email, ":email"=>$username_email]);
+if ($stmt->rowCount() == 0){
+    $_SESSION["error"] = "Почта или никнейм не зарегестрированы.";
+    header("location: index.php");
+    exit();
+}
+$query = "SELECT * FROM Users WHERE (Username = :username OR Email = :email) AND Password = :password";
+$stmt = $pdo->prepare($query);
+$stmt->execute([":username"=>$username_email, ":email"=>$username_email, ":password"=>$password]);
+if ($stmt->rowCount() > 0){
+    header("location: site.php");
+    exit();
 }
 else{
+    $_SESSION["error"] = "Неверный пароль.";
     header("location: index.php");
     exit();
 }
